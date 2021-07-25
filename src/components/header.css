@@ -5,75 +5,117 @@ body {
   width: 1.6em;
   height: 1.6em;
 }
+:root {
+  --borRad: 10px;
+  --fontHeader: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header {
+  background: #568051;
+}
+
 .navbar {
-  background: #415068;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline-end: 2rem;
 }
-.navbar div {
-  display: none;
-}
-.navbar .toggle,
+
 .navbar .brand {
-  display: inline-block;
+  font-size: 22px;
+  font-family: var(--fontHeader);
+  order: 2;
 }
-.navbar .link {
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  background: #223047;
-  color: white;
-}
-.navbar .link:hover,
-.navbar .link:active {
-  color: #223047;
-  background: white;
-}
-.navbar .brand {
-  width: 10em;
-  text-align: center;
-  padding: 1em;
-  color: white;
-}
-.navbar p {
-  text-decoration: none;
-}
+
 .navbar .toggle {
-  padding: 1em;
-  color: black;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .toggle:active {
+  background-color: #40623c;
+}
+
+.navbar .toggle .toggle--icon {
+  width: 1.6em;
+}
+
+.search--bar {
+  display: none;
 }
 
 @media (min-width: 48em) {
-  .navbar {
-    display: flex;
-  }
-  .navbar .left,
-  .navbar .right {
-    display: flex;
-    flex: 1;
-  }
-  .navbar .link {
-    width: auto;
-  }
-  .navbar .right {
-    justify-content: flex-end;
-  }
-  .navbar .toggle {
+  .navbar--actions {
     display: none;
   }
 }
-@media (min-width: 48em) {
-  .navbar div {
+
+@media (min-width: 768px) {
+  .navbar {
+    margin-inline-start: 4rem;
+    margin-inline-end: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .brand {
+    order: -1;
+    margin-block: 0;
+  }
+
+  .navbar .toggle {
+    display: none;
+  }
+
+  .search--bar {
     display: flex;
   }
-}
-@media (max-width: 48em) {
-  .navbar.active .toggle {
-    background: #223047;
-    color: white;
+
+  .search--input {
+    border: 2px solid #40623c;
+    border-radius: var(--borRad) 0 0 var(--borRad);
+    border-right: none;
+    width: 20em;
+    font-size: 18px;
+    font-family: var(--fontHeader);
   }
-  .navbar .brand {
-    text-align: left;
+
+  .search--button {
+    border: 2px solid #40623c;
+    border-radius: 0 var(--borRad) var(--borRad) 0;
+    border-left: none;
   }
-  .navbar.active div {
-    display: block;
+
+  .search--button:hover,
+  .search--button:active {
+    background: #40623c;
+    cursor: pointer;
+  }
+
+  .search--input,
+  .search--button {
+    padding: 0.5em;
+  }
+
+  .search--button img {
+    width: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .navbar--actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 22px;
+      font-family: var(--fontHeader);
+    }
+
+    .navbar--actions dl {
+      margin: 0;
+    }
   }
 }
