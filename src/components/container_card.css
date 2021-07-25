@@ -1,0 +1,41 @@
+.container-card{
+    height: 300px;
+    width: 600px;
+    padding:20px;
+    margin:25px;
+    background-color: white;
+    box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.1);
+    display:flex;
+}
+
+.container-card-img img{
+    width:100px;
+    height: 100px;
+    display: block;
+    margin-top:100px;
+}
+
+.container-card-text{
+    margin-left: 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-card__name{
+    color:#1C8759;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom:5px ;
+}
+
+.container-card__name-science{
+    color:lightgray;
+    margin-bottom: 15px;
+}
+
+.container-card__name-features{
+    margin-bottom: 15px;
+}

@@ -1,8 +1,11 @@
-import data from "./data.json";
-import"./components/globalStyles.css"
-import Header from "./components/Header";
+
+ import data from "./data.json";
+ import Header from "./components/Header";
+import ContainerCard from "./components/ContainerCard";
+import Footer from "./components/Footer";
 import SuggestionCard from "./components/SuggestionCard";
 import GraphsCard from "./components/GraphsCard";
+import"./components/globalStyles.css";
 
 function App() {
 
@@ -32,6 +35,8 @@ function App() {
       <Header/>
       <SuggestionCard cropName="acelga" />
       <GraphsCard titleCard="Rotaciones Comunes" />
+      <ContainerCard></ContainerCard>
+      <Footer></Footer>
       <form  onSubmit={fetchCrop}>
         <input onInput={inputHandle} type="text" placeholder="Nombre deL cultivo"/>
         <button type="submit">fetch data</button>
