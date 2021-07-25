@@ -1,10 +1,12 @@
-html {
-<<<<<<< HEAD
-    font-family: 'Oxygen', sans-serif;
-}
 body {
     margin: 0px;
 }
+
+.menuIcon {
+  width: 1.6em;
+  height: 1.6em;
+}
+
 .navbar {
     background: #415068;
     border: 1px solid red;
@@ -78,87 +80,4 @@ body {
     .navbar.active div {
         display: block;
     }
-}
-=======
-  font-family: "Oxygen", sans-serif;
-}
-body {
-  margin: 0px;
-}
-.navbar {
-  background: #415068;
-}
-.navbar div {
-  display: none;
-}
-.navbar .toggle,
-.navbar .brand {
-  display: inline-block;
-}
-.navbar .link {
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  background: #223047;
-  color: white;
-}
-.navbar .link:hover,
-.navbar .link:active {
-  color: #223047;
-  background: white;
-}
-.navbar .brand {
-  width: 10em;
-  text-align: center;
-  padding: 1em;
-  color: white;
-}
-.navbar p {
-  text-decoration: none;
-}
-.navbar .toggle {
-  padding: 1em;
-  color: black;
-}
-
-.menuIcon {
-  width: 1.6em;
-  height: 1.6em;
-}
-@media (min-width: 48em) {
-  .navbar {
-    display: flex;
-  }
-  .navbar .left,
-  .navbar .right {
-    display: flex;
-    flex: 1;
-  }
-  .navbar .link {
-    width: auto;
-  }
-  .navbar .right {
-    justify-content: flex-end;
-  }
-  .navbar .toggle {
-    display: none;
-  }
-}
-@media (min-width: 48em) {
-  .navbar div {
-    display: flex;
-  }
-}
-@media (max-width: 48em) {
-  .navbar.active .toggle {
-    background: #223047;
-    color: white;
-  }
-  .navbar .brand {
-    text-align: left;
-  }
-  .navbar.active div {
-    display: block;
-  }
-}
->>>>>>> a92a59449129384d6ac6c034e72225e71f8a1ff5
+} 
