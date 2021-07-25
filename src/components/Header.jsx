@@ -1,33 +1,31 @@
-import React from 'react';
-import '../components/header.css';
-import {Link} from 'react-dom'
-var link_curr = `<a class="toggle" href="#"><i class="fas fa-bars"></i></a>`;
-var link_curr1 = `<a href="#" class="brand">MyName</a>`;
-var link_curr2 = `<a href="#" class="link">Link 1</a>`;
-var link_curr3 = `<a href="#" class="link">Link 2</a>`;
-var link_curr4 = `<a href="#" class="link">Link 3</a>`;
-
+import React from 'react'
+import '../components/header.css'
+import menu from "../icons/menu.svg"
 
 const Header = () => {
 
-    function handleClick (navHamburger) {
-        navHamburger.target.parentElement.classList.toggle('active'); 
+    const handleClick=(e)=>{
+        e.target.parentElement.parentElement.classList.toggle('active');
     }
 
     return (
+    <header className="header">
+
         <div className="navbar">
-        <div class="toggle" onClick={handleClick}><i class="fas fa-bars"></i></div>
-        <a href="#" className="brand">MyName</a>
-        <div className="left">
-            {/* {link_curr2}
-            {link_curr3} */}
-        </div>
-        <div className="right">
-            {/* {link_curr4} */}
-        </div>
-    </div>
+            <p href="#" className="toggle" id="navHamburger">
+                <img onClick={handleClick} src={menu} className="menuIcon"/>
+            </p>
+            <p href="#" className="brand">MyName</p>
+         <div className="left">
+                <p href="#" className="link">Link 1</p>
+             <p href="#" className="link">Link 2</p>
+            </div>
+         <div className="right">
+            <p href="#" className="link">Link 3</p>
+            </div>
+          </div>
+    </header>
     )
 }
 
 export default Header
-
