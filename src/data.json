@@ -1,0 +1,18 @@
+{
+    "crops":{
+        "acelga":{
+            "soilTypes":["Sandy"],
+            "season":{
+                "summer":"abril - julio",
+                "winter":"octubre - marzo"
+            },
+            "RH":"90% - 95%",
+            "temperature":{
+                "min":"15º C",
+                "max":"25º C"
+            },
+            "compatibleCrops":["ajo","berengena","brocoly","cebolla","col","coliflor","lechuga"],
+            "incompatibleCrops":["espinaca","remolacha"]
+        }
+    }
+}
