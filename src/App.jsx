@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <form  onSubmit={fetchCrop}>
-        <input onInput={inputHandle} type="text" placeholder="nombre de cultivo"/>
+        <input onInput={inputHandle} type="text" placeholder="Nombre deL cultivo"/>
         <button type="submit">fetch data</button>
       </form>
     </div>
@@ -30,3 +30,4 @@ function App() {
 }
 
 export default App;
+
