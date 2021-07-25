@@ -2,6 +2,7 @@
  import Header from "./components/Header";
 import SuggestionCard from "./components/SuggestionCard";
 import ContainerCard from "./components/ContainerCard";
+import Footer from "./components/Footer";
 import"./components/globalStyles.css"
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Header/>
       <SuggestionCard cropName="acelga" />
       <ContainerCard></ContainerCard>
+      <Footer></Footer>
       <form  onSubmit={fetchCrop}>
         <input onInput={inputHandle} type="text" placeholder="Nombre deL cultivo"/>
         <button type="submit">fetch data</button>
