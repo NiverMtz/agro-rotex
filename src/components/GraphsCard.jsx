@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/graphsCard.css";
+import graph from "../icons/graph.jpg"
 var canvas;
 var context;
 var Val_max;
@@ -92,12 +93,14 @@ const GraphsCard = ({ titleCard }) => {
 
   return (
     <div className="container">
-      <div onLoad={init} className="graphsCard">
+      {/* <div onLoad={init} className="graphsCard"> */}
+      <div className="graphsCard">
         <h2>{titleCard}</h2>
-        <canvas id="canvas" height="200" width="450"></canvas>
+        {/* <canvas id="canvas" height="200" width="450"></canvas> */}
+        <img src={graph} alt="ploteo grafica"/>
         <br />
         <span> Maíz </span>  <span> Aguacate</span>  <span> Albaca</span>
-        <button onClick={init}>Enviar</button>
+        {/* <button onClick={init}>Enviar</button> */}
       </div>
     </div>
   );
