@@ -1,5 +1,7 @@
  import data from "./data.json";
  import Header from "./components/Header";
+import SuggestionCard from "./components/SuggestionCard";
+import"./components/globalStyles.css"
 
 function App() {
 
@@ -27,6 +29,7 @@ function App() {
         crossOrigin="anonymous"></script>
       
       <Header/>
+      <SuggestionCard cropName="acelga" />
       <form  onSubmit={fetchCrop}>
         <input onInput={inputHandle} type="text" placeholder="Nombre deL cultivo"/>
         <button type="submit">fetch data</button>

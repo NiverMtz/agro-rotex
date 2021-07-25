@@ -13,7 +13,7 @@ const Header = () => {
 
         <div className="navbar">
             <p href="#" className="toggle" id="navHamburger">
-                <img  onClick={handleClick} src={menu} className="menuIcon" onClick={handleClick}/>
+                <img  onClick={handleClick} src={menu} className="menuIcon"/>
             </p>
             <p href="#" className="brand">MyName</p>
          <div className="left">

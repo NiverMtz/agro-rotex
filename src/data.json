@@ -2,10 +2,16 @@
     "crops":{
         "acelga":{
             "soilTypes":["Sandy"],
-            "season":{
-                "summer":"abril - julio",
-                "winter":"octubre - marzo"
-            },
+            "season":[{
+                "name":"Verano",
+                "from":"Abril",
+                "to":"Julio"
+            },{
+                "name": "Invierno",
+                "from":"Octubre",
+                "to":"Marzo"
+            }],
+            
             "RH":"90% - 95%",
             "temperature":{
                 "min":"15º C",

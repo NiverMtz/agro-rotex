@@ -1,8 +1,9 @@
-html {
-  font-family: "Oxygen", sans-serif;
-}
 body {
   margin: 0px;
+}
+.menuIcon {
+  width: 1.6em;
+  height: 1.6em;
 }
 .navbar {
   background: #415068;
@@ -40,10 +41,6 @@ body {
   color: black;
 }
 
-.menuIcon {
-  width: 1.6em;
-  height: 1.6em;
-}
 @media (min-width: 48em) {
   .navbar {
     display: flex;
