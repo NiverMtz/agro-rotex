@@ -1,3 +1,80 @@
-.header {
-    
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+body {
+    margin: 0px;
+}
+.navbar {
+    background: #415068;
+    border: 1px solid red;
+}
+.navbar div {
+    display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #223047;
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: #223047;
+    background: white;
+}
+.navbar .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+    .navbar .link {
+        width: auto;
+    }
+    .navbar .right {
+        justify-content: flex-end;
+    }
+    .navbar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 48em) {
+    .navbar div {
+        display: flex;
+    }
+}
+@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+    .navbar .brand {
+        text-align: left;
+    }
+    .navbar.active div {
+        display: block;
+    }
 }
