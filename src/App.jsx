@@ -1,4 +1,5 @@
-import data from "./data.json";
+ import data from "./data.json";
+ import Header from "./components/Header";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   
   return (
     <div>
+      <Header/>
       <form  onSubmit={fetchCrop}>
         <input onInput={inputHandle} type="text" placeholder="nombre de cultivo"/>
         <button type="submit">fetch data</button>
