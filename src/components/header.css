@@ -48,6 +48,7 @@
 @media (min-width: 768px) {
   .navbar {
     margin-inline-start: 4rem;
+    margin-inline-end: 4rem;
     display: flex;
     justify-content: space-between;
   }
@@ -102,6 +103,10 @@
         gap: 1rem;
         font-size: 22px;
         font-family: var(--fontHeader);
+      }
+
+      .navbar--actions dl {
+        margin: 0;
       }
   }
 
