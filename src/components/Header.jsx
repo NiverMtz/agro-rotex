@@ -1,31 +1,45 @@
-import React from 'react'
-import '../components/header.css'
-import menu from "../icons/menu.svg"
+import React from "react";
+import "../components/header.css";
+import toggle from "../icons/menu.svg";
+import search from "../icons/search-solid.svg";
 
 const Header = () => {
+  const handleClick = (e) => {
+    console.log("Hola Mundo!");
+  };
 
-    const handleClick=(e)=>{
-        e.target.parentElement.parentElement.classList.toggle('active');
-    }
-
-    return (
+  return (
     <header className="header">
-
-        <div className="navbar">
-            <p href="#" className="toggle" id="navHamburger">
-                <img onClick={handleClick} src={menu} className="menuIcon"/>
-            </p>
-            <p href="#" className="brand">MyName</p>
-         <div className="left">
-                <p href="#" className="link">Link 1</p>
-             <p href="#" className="link">Link 2</p>
-            </div>
-         <div className="right">
-            <p href="#" className="link">Link 3</p>
-            </div>
-          </div>
+      <navbar className="navbar">
+        <p href="#" className="brand">
+          AGRO ROTEX
+        </p>
+        <div className="toggle">
+          <img
+            onClick={handleClick}
+            src={toggle}
+            alt="Hamburguesita"
+            className="toggle--icon"
+          />
+        </div>
+        <form onSubmit="" className="search--bar">
+          <input 
+          className="search--input"
+          onInput=""
+          type="text" 
+          placeholder="¿Qué desea cultivar?" />
+          <button
+          className="search--button"
+          type="submit"><img src={search} alt="icon-search" /></button>
+        </form>
+        <div className="navbar--actions">
+          <p> 🌡 Temperatura</p>
+          <p> 🗺 Región</p>
+          <p> 🌤 Clima</p>       
+        </div>
+      </navbar>
     </header>
-    )
-}
+  );
+};
 
-export default Header
+export default Header;
