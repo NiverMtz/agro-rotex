@@ -39,3 +39,35 @@
 .container-card__name-features{
     margin-bottom: 15px;
 }
+
+
+@media (max-width:48em) {
+    .container-card{
+        height: 600px;
+        width: 400px;
+        padding:10px;
+        margin:25px;
+        background-color: white;
+        box-shadow: 2px 3px 20px 1px rgba(0,0,0,0.1);
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        
+    }
+
+    .container-card-img img{
+        margin-top: 5px;
+        text-align: center;
+        margin-left: 150px;
+    }
+
+    .container-card__name-features{
+        text-align:start;
+
+    }
+
+    .container-card__name-compatibility{
+        padding-bottom: 20px;
+    }
+
+}
