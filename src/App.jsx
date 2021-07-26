@@ -24,9 +24,9 @@ function App() {
 
   const [crop,setCrop]= useState("");
 
-const showInfo=(crop)=>{
-  setData(crop)
-}
+  const showInfo=(crop)=>{
+    setData(crop)
+  } 
   
 
   const fetchData=async (name)=>{
