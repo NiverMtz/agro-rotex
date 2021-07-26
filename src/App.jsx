@@ -35,7 +35,7 @@ const showInfo=(crop)=>{
 
      setCrop(
       <div onClick={showInfo.bind(this,crop)} className="container fake-gap">
-          <ContainerCard cropData={crop}></ContainerCard>
+          <ContainerCard cropData={crop.data}></ContainerCard>
           <br />
           <i className="fa fa-xing" aria-hidden="true"></i>
       </div>
