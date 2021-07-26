@@ -21,7 +21,7 @@ function SuggestionCard(props) {
 
 
     const seasons =crop.season.map(season=>{
-        return (<div className="crop__feature">
+        return (<div className="crop__feature" key={season.from}>
             <img src={wether} className="crop__icon" alt="estacion" /> 
                 
             <p>{season.name}: {season.from} - {season.to}</p>
