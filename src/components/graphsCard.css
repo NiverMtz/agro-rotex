@@ -1,6 +1,15 @@
 .graphsCard img {
     max-width: 100%;
 }
-.graphsCard span {
-    color: red;
+
+.graphsCard__canvas {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.graphsCard__title {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }

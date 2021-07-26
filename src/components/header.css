@@ -24,9 +24,15 @@ body {
 }
 
 .navbar .brand {
+  display: flex;
+  align-items: center;
   font-size: 22px;
   font-family: var(--fontHeader);
   order: 2;
+}
+
+.navbar .brand img {
+  width: 45px;
 }
 
 .navbar .toggle {
@@ -46,6 +52,10 @@ body {
 }
 
 .search--bar {
+  display: none;
+}
+
+.navbar--actions {
   display: none;
 }
 
@@ -106,6 +116,12 @@ body {
     width: 1rem;
   }
 
+  @media (min-width: 1024px) {
+    .navbar--actions {
+      display: none;
+    }  
+  }
+  
   @media (min-width: 1024px) {
     .navbar--actions {
       display: flex;

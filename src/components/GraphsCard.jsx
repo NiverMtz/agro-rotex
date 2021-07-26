@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/graphsCard.css";
-import graph from "../icons/graph.jpg"
+import graph from "../icons/graph.png";
 var canvas;
 var context;
 var Val_max;
@@ -20,7 +20,7 @@ Val_min = -40;
 var stepSize = 10;
 var columnSize = 50;
 var rowSize = 50;
-var margin = 10;    
+var margin = 10;
 var xAxis = [
   " ",
   "Jan",
@@ -39,7 +39,6 @@ var xAxis = [
 //
 
 const GraphsCard = ({ titleCard }) => {
-
   function init() {
     canvas = document.getElementById("canvas");
     context = canvas.getContext("2d");
@@ -97,9 +96,13 @@ const GraphsCard = ({ titleCard }) => {
       <div className="graphsCard">
         <h2>{titleCard}</h2>
         {/* <canvas id="canvas" height="200" width="450"></canvas> */}
-        <img src={graph} alt="ploteo grafica"/>
+        <div className="graphsCard__canvas">
+          <img src={graph} alt="ploteo grafica" />
+        </div>
         <br />
-        <span> Maíz </span>  <span> Aguacate</span>  <span> Albaca</span>
+        <div className="graphsCard__title">
+          <span> Maíz </span>  <span> Aguacate</span>  <span> Albaca</span>
+        </div>
         {/* <button onClick={init}>Enviar</button> */}
       </div>
     </div>
