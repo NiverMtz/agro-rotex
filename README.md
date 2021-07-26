@@ -9,4 +9,4 @@ Acerca del proyecto:
   <li>PDF: ...</li>
 </ul>
 
-<img src="https://raw.githubusercontent.com/NiverMtz/agro-rotex/gh-pages/logo.png" />
+![Logo Agro-Rotex](https://raw.githubusercontent.com/NiverMtz/agro-rotex/gh-pages/logo.png)
