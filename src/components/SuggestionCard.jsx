@@ -6,17 +6,23 @@ import rh from "../icons/rh.svg";
 import check from "../icons/check.svg";
 import close from "../icons/close.svg";
 import wether from "../icons/wether.svg";
-import {useState} from "react";
 
 function SuggestionCard(props) {
-    const [data]= useState(crops.crops);
-    
+    const crop = props.cropData;
+    console.log(crop)
 
-    let crop = data[props.cropName];
+    
+    if(!crop){
+        return(
+            <div >
+            </div>
+        )
+    }
+
 
     return (
         <div className="container crop">
-            <h2>{props.cropName.toUpperCase()}</h2>
+            <h2>{crop.name.toUpperCase()}</h2>
             <div className="crop__feature">
                 <img src={thermo} className="crop__icon" alt="termometro" /> 
                 
@@ -51,9 +57,6 @@ function SuggestionCard(props) {
                     <CropList crops={crop.compatibleCrops}/>
                 </ul>
             </div>
-            <div className="crop__feature">
-              <h3>Recomendaciones de siembra:</h3>
-              </div>
         </div>
     )
 }

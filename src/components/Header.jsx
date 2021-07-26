@@ -8,10 +8,16 @@ var region = "Región";
 var clima = "Clima";
 
 
-const Header = () => {
-  const handleClick = (e) => {
-    console.log("Hola Mundo!");
+const Header = (props) => {
+  let input ="";
+  const inputHandle = (e) => {
+    input= e.target.value;
   };
+
+  const fetchData=(e)=>{
+    e.preventDefault();
+    props.fetchData(input)
+  }
 
   return (
     <header className="header">
@@ -22,20 +28,19 @@ const Header = () => {
         </div>
         <div className="toggle">
           <img
-            onClick={handleClick}
             src={toggle}
             alt="Hamburguesita"
             className="toggle--icon"
           />
         </div>
-        <form onSubmit="" className="search--bar">
+        <form  className="search--bar">
           <input
             className="search--input"
-            onInput=""
+            onInput={inputHandle}
             type="text"
             placeholder="¿Qué desea cultivar?"
           />
-          <button className="search--button" type="submit">
+          <button className="search--button" type="submit" onClick={fetchData}>
             <img src={search} alt="icon-search" />
           </button>
         </form>

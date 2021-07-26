@@ -6,24 +6,46 @@ import Footer from "./components/Footer";
 import SuggestionCard from "./components/SuggestionCard";
 import GraphsCard from "./components/GraphsCard";
 import "./components/globalStyles.css";
+import {useState} from "react";
+
+async function getCrop(name){
+  const res = await fetch('https://us-south.functions.appdomain.cloud/api/v1/web/luis.lc72353%40gmail.com_dev/agrorotex-api/api?name='+name, {
+    method: 'POST',
+    body: {}
+ });
+
+ console.log(name)
+ return res.json();
+}
 
 function App() {
-  let inputCrop = "";
 
-  function fetchCrop(e) {
-    e.preventDefault();
-    const suggestion = data.crops[inputCrop];
-    if (suggestion) {
-      console.log(inputCrop.toUpperCase());
-      console.log(JSON.stringify(suggestion, null, "\t"));
-    } else {
-      console.log(`no se encontraron datos para "${inputCrop}"`);
-    }
-  }
+  const [data,setData] =  useState("");
 
-  function inputHandle(e) {
-    inputCrop = e.target.value;
+  const [crop,setCrop]= useState("");
+
+const showInfo=(crop)=>{
+  setData(crop)
+}
+  
+
+  const fetchData=async (name)=>{
+    const crop=await getCrop(name);
+    
+
+     setCrop(
+      <div onClick={showInfo.bind(this,crop)} className="container fake-gap">
+          <ContainerCard cropData={crop}></ContainerCard>
+          <br />
+          <i className="fa fa-xing" aria-hidden="true"></i>
+      </div>
+   )
+
+   
   }
+  
+
+ 
 
   return (
     <div>
@@ -35,7 +57,7 @@ function App() {
       ></script> */}
 
       {/* Header */}
-      <Header />
+      <Header fetchData={fetchData}/>
 
       {/* Layout */}
       <div className="grid__layout">
@@ -51,39 +73,18 @@ function App() {
 
         {/* Display for Cards */}
         <div className="container__card">
-          <div className="container fake-gap">
-            <ContainerCard></ContainerCard>
-            <br />
-            <i class="fa fa-xing" aria-hidden="true"></i>
-          </div>
-          <div className="container fake-gap">
-            <ContainerCard></ContainerCard>
-            <br />
-            <i class="fa fa-xing" aria-hidden="true"></i>
-          </div>
-          <div className="container fake-gap">
-            <ContainerCard></ContainerCard>
-            <br />
-            <i class="fa fa-xing" aria-hidden="true"></i>
-          </div>
+          {crop}
         </div>
 
         {/* Sugestion Card */}
-        <SuggestionCard cropName="acelga" />
+        <SuggestionCard cropData={data.data} />
       </div>
 
       {/* Footer */}
       <Footer></Footer>
 
       {/* Others: Quit */}
-      <form onSubmit={fetchCrop}>
-        <input
-          onInput={inputHandle}
-          type="text"
-          placeholder="Nombre deL cultivo"
-        />
-        <button type="submit">fetch data</button>
-      </form>
+     
     </div>
   );
 }
