@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/agro-rotex/static/css/main.51eaf57e.chunk.css",
-    "main.js": "/agro-rotex/static/js/main.1e3c4d57.chunk.js",
-    "main.js.map": "/agro-rotex/static/js/main.1e3c4d57.chunk.js.map",
+    "main.js": "/agro-rotex/static/js/main.d9f635f1.chunk.js",
+    "main.js.map": "/agro-rotex/static/js/main.d9f635f1.chunk.js.map",
     "runtime-main.js": "/agro-rotex/static/js/runtime-main.af7081ac.js",
     "runtime-main.js.map": "/agro-rotex/static/js/runtime-main.af7081ac.js.map",
     "static/js/2.3c9a7a25.chunk.js": "/agro-rotex/static/js/2.3c9a7a25.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.af7081ac.js",
     "static/js/2.3c9a7a25.chunk.js",
     "static/css/main.51eaf57e.chunk.css",
-    "static/js/main.1e3c4d57.chunk.js"
+    "static/js/main.d9f635f1.chunk.js"
   ]
 }
