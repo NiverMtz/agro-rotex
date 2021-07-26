@@ -20,6 +20,16 @@ function SuggestionCard(props) {
     }
 
 
+    const seasons =crop.season.map(season=>{
+        return (<div className="crop__feature">
+            <img src={wether} className="crop__icon" alt="estacion" /> 
+                
+            <p>{season.name}: {season.from} - {season.to}</p>
+        </div>
+        )
+    });
+
+
     return (
         <div className="container crop">
             <h2>{crop.name.toUpperCase()}</h2>
@@ -28,17 +38,7 @@ function SuggestionCard(props) {
                 
                 <p>min {crop.temperature.min},  max {crop.temperature.max}</p>
             </div>
-            <div className="crop__feature">
-                <img src={wether} className="crop__icon" alt="estacion" /> 
-                
-                <p>{crop.season[0].name}: {crop.season[0].from} - {crop.season[0].to}</p>
-            </div>
-            
-            <div className="crop__feature">
-                <img src={wether} className="crop__icon" alt="estacion" /> 
-                
-                <p>{crop.season[1].name}: {crop.season[1].from} - {crop.season[1].to}</p>
-            </div>
+            {seasons}
             <div className="crop__feature">
                 <img className="crop__icon" src={rh} alt="humedad relativa" />
                 <p>{crop.RH}</p>
