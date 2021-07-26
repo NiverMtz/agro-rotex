@@ -8,3 +8,5 @@ Acerca del proyecto:
   <li>Link del proyecto [ ¡Ve el proyecto! ]: https://nivermtz.github.io/agro-rotex/</li>
   <li>PDF: ...</li>
 </ul>
+
+<img src="https://raw.githubusercontent.com/NiverMtz/agro-rotex/gh-pages/logo.png" />
