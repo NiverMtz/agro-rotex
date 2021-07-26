@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/agro-rotex/static/css/main.665da134.chunk.css",
+    "main.js": "/agro-rotex/static/js/main.258e359d.chunk.js",
+    "main.js.map": "/agro-rotex/static/js/main.258e359d.chunk.js.map",
+    "runtime-main.js": "/agro-rotex/static/js/runtime-main.af7081ac.js",
+    "runtime-main.js.map": "/agro-rotex/static/js/runtime-main.af7081ac.js.map",
+    "static/js/2.4e64ee3c.chunk.js": "/agro-rotex/static/js/2.4e64ee3c.chunk.js",
+    "static/js/2.4e64ee3c.chunk.js.map": "/agro-rotex/static/js/2.4e64ee3c.chunk.js.map",
+    "index.html": "/agro-rotex/index.html",
+    "static/css/main.665da134.chunk.css.map": "/agro-rotex/static/css/main.665da134.chunk.css.map",
+    "static/js/2.4e64ee3c.chunk.js.LICENSE.txt": "/agro-rotex/static/js/2.4e64ee3c.chunk.js.LICENSE.txt",
+    "static/media/check.f7b0e208.svg": "/agro-rotex/static/media/check.f7b0e208.svg",
+    "static/media/close.fa7e5ead.svg": "/agro-rotex/static/media/close.fa7e5ead.svg",
+    "static/media/logo.c309f388.png": "/agro-rotex/static/media/logo.c309f388.png",
+    "static/media/menu.5a3d4a65.svg": "/agro-rotex/static/media/menu.5a3d4a65.svg",
+    "static/media/rh.9cc0519b.svg": "/agro-rotex/static/media/rh.9cc0519b.svg",
+    "static/media/search-solid.cc51b702.svg": "/agro-rotex/static/media/search-solid.cc51b702.svg",
+    "static/media/thermometer.1f4a8916.svg": "/agro-rotex/static/media/thermometer.1f4a8916.svg",
+    "static/media/wether.ea7d6528.svg": "/agro-rotex/static/media/wether.ea7d6528.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af7081ac.js",
+    "static/js/2.4e64ee3c.chunk.js",
+    "static/css/main.665da134.chunk.css",
+    "static/js/main.258e359d.chunk.js"
+  ]
+}
